@@ -14,14 +14,16 @@ const duplicates = [
     'soda'
   ];
   function removeDuplicates(param) {
-    let unique = {};
-    param.forEach((i) => {
-            if (!unique[i]) {
-                unique[i] = true;
-            }
-        });
-     return Object.keys(unique); 
+    tempArray = [];
+    for (let i = 0; i < param.length; i++) { 
+        if (!tempArray.includes(param[i])) {
+           tempArray.push(param[i]);
+        }
+        else {
+           
+        }
+    }
+    return tempArray;
   }
-
 console.log(removeDuplicates(duplicates)); 
   

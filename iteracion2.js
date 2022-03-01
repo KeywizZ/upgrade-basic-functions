@@ -1,15 +1,15 @@
 // Buscar la palabra más larga
 
 const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.'];
-function findLongestWord() {      
-    let largo = 'a';
-    for (i=0; i<avengers.length; i++) {
-        if (avengers[i].length>largo.length) {
-            largo = avengers[i];
+function findLongestWord(param) {      
+    let lengthWord = '';
+    for (i=0; i<param.length; i++) {
+        if (param[i].length>lengthWord.length) {
+            lengthWord = param[i];
         }
     }
-    console.log(largo);
-    /* return largo */
+    console.log(lengthWord);
+    /* return lengthWord */
 }
 
-findLongestWord();
+findLongestWord(avengers);

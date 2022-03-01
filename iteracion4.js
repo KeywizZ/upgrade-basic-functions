@@ -1,4 +1,4 @@
-// Calcular el promedio
+// Calcular el promedio(La media)
 
 const numbers = [12, 21, 38, 5, 45, 37, 6];
 

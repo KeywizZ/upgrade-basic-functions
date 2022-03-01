@@ -16,14 +16,13 @@ const duplicates = [
   function removeDuplicates(param) {
     tempArray = [];
     for (let i = 0; i < param.length; i++) { 
-        if (!tempArray.includes(param[i])) {
-           tempArray.push(param[i]);
-        }
-        else {
-           
+        for (let j = i+1; j < param.length; j++){
+            if(param[i] === param[j]){
+                param.splice(j,1)
+            }
         }
     }
-    return tempArray;
+    return param;
   }
 console.log(removeDuplicates(duplicates)); 
   

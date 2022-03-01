@@ -9,6 +9,7 @@ function findLongestWord() {
         }
     }
     console.log(largo);
+    /* return largo */
 }
 
 findLongestWord();
